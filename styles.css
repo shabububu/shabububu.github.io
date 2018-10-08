@@ -1,23 +1,24 @@
-#top-description {
+header {
   border: 1px solid rgb(184, 193, 186);
   width: 300px;
   padding: 1em;
   box-shadow: 7px 7px 7px 0px rgb(184, 193, 186);
 }
 
-#top-description .name {
+header .name {
   font-style: italic;
 }
 
-#top-description .title {
+header .title {
   font-style: italic;
 }
 
-#top-description .logo {
+header .logo {
   width: 300px;
   padding: 1em 0 1em 0;
 }
-.work .featured-work {
+
+main .featured-work {
   border: 1px solid rgb(184, 193, 186);
   width: 300px;
   padding: 0 0 1em 0;
