@@ -1,67 +1,83 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shabububu's Portfolio</title>
-    <link href="./styles.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm">
-          <img class="logo" src="logo.png" alt="My Logo">
-        </div>
-        <div class="col-sm">
-          <div class="name">Shabububu</div>
-          <div class="title">Software Engineer</div>
-        </div>
-      </div>
-    </div>
-  </header>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm">
-        <nav>
-          <div class="nav-select">1</div>
-          <div class="nav-select">2</div>
-          <div class="nav-select">3</div>
-        </nav>
-      </div>
-      <div class="col-sm"> 
-        <main>
-          <img class="main-image" src="urban_turtle.jpg" alt="main-image">
-          <div class="featured-work">
-            <h2>Featured Work</h2>
-            <div class="container">
-              <div class="row">
+    <link href="./css//styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" 
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+          crossorigin="anonymous">
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Raleway">
 
-                <div class="col-sm">
-                  <div class="featured-site">
-                    <img class="featured-site" src="site1.html" alt="featured site 1 logo">
-                    <a href="http://example.org/1">link 1</a>
-                  </div class="featured-site">
-                </div> 
-                <div class="col-sm"> 
-                  <div class="featured-site">
-                    <img class="featured-site" src="site1.html" alt="featured site 2 logo">
-                    <a href="http://example.org/1">link 2</a>
-                  </div class="featured-site">
-                </div>
-                <div class="col-sm">
-                  <div class="featured-site">
-                    <img class="featured-site" src="site1.html" alt="featured site 3 logo">
-                    <a href="http://example.org/1">link 3</a>
-                  </div class="featured-site">
-                </div>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row header">
+      <div class="col-sm-2"></div>
+      <div class="col-md-5 header-logo"><img src="./img/logo.png" alt="My Logo"></div>
+      <div class="col-sm-5 header-description">
+        <h2 id="display-name">Shabububu</h2>
+        <div id="display-title">Software Engineer</div>
+      </div>
+    </div><!-- end header -->
+
+    <div class="row">
+      <div class="col-2"><!-- blank --></div>
+      <div class="col-10"><hr /></div>
+    </div>
+    <div class="row">
+
+      <div class="col-sm-2 col-2 colors">
+        <div class="row color-option">
+          #02b3e4
+        </div>
+        <div class="row color-option">
+          #2d3c49
+        </div>
+        <div class="row color-option">
+          #7d97ad
+        </div>
+      </div><!-- end colors -->
+
+      <div class="col-md-10 main">
+        <div id="main-background"></div>
+        <div class="featured-work">
+          <h2>Featured Work</h2>
+          <div class="row">
+
+            <div class="col-sm">
+              <div class="featured-site">
+                <i class="fa fa-font fa-5x"></i>
+                <p><a href="http://www.asobibox.com/">http://www.asobibox.com/</a></p>
+              </div>
+            </div> 
+
+            <div class="col-sm"> 
+              <div class="featured-site">
+                <i class="fa fa-calendar fa-5x"></i>
+                <p><a href="https://github.com/shabububu/ccql/">https://github.com/shabububu/ccql/</a></p>
               </div>
             </div>
-          </div>
-        </main>
-      </div>
+
+            <div class="col-sm">
+              <div class="featured-site">
+                <i class="fa fa-globe fa-5x"></i>
+                <p><a href="https://github.com/shabububu/foobar2016/">https://github.com/shabububu/foobar2016/</a></p>
+              </div>
+            </div>
+
+          </div><!-- end row -->
+        </div><!-- end featured-work -->
+      </div><!-- end main -->
     </div>
-  </div>
+  </div><!-- end container -->
 
 </body>
 </html>
