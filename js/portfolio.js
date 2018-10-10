@@ -7,9 +7,8 @@ function displayPalette() {
 
   for (var i = 0; i < colors.length; i++) {
     color = colors[i];
-    //square = '<div class="row-2 square">';
-    square = jQuery('<div/>', {class: 'row-2 square', 
-			       css: {"background-color": color}});
+    square = $('<div/>', {class: 'row-2 square', 
+			  css: {"background-color": color}});
     palette.append(square);
     palette.append('</div><div class="row-2 color-description">'+color+'</div>');
   }

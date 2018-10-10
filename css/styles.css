@@ -8,7 +8,6 @@ body {
 
 .header-description {
   font-family: 'Raleway', sans-serif;
-  text-align: right;
 }
 
 #display-name {
@@ -25,17 +24,13 @@ body {
   opacity: 0.75;
 }
 
-.header-logo {
-  text-align: left;
-}
-
 .header-logo img {
   width: 75px;
 }
 
 hr {
   border: 0;
-  height: 0; /* Firefox... */
+  height: 0; /* Supposedly for Firefox */
   background: #7d97ad;
   padding: 2px 0 0 0;
 }
