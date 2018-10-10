@@ -61,6 +61,7 @@ hr {
 .featured-work {
   width: 100%;
   padding: 20px 0 0 0;
+  word-wrap: break-word;
 }
 
 .featured-work h2 {
