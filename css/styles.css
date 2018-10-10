@@ -53,11 +53,12 @@ hr {
 }
 
 #main-background {
-  border: 1px 0 0 0;
-  padding: 100px;
+  padding: 125px;
+  margin: 15px 0 15px 0;
   background: url(../../img/cropped-abstract-business-code.jpg);
-  background-size: contain, cover;
+  background-size: cover;
   background-position: center;
+  opacity: .95;
 }
 
 .featured-work {
