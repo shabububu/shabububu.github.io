@@ -1,3 +1,4 @@
+var anchors = [{"anchor-text":"Work", "anchor-id":"work-section"}];
 var colors = ["#02b3e4", "#2d3c49", "#7d97ad"];
 
 var works = [{"work-title":"Asobibox", "work-url":"http://www.asobibox.com/", 
@@ -6,6 +7,21 @@ var works = [{"work-title":"Asobibox", "work-url":"http://www.asobibox.com/",
               "work-img-src":"./img/work/ccql.png", "work-img-alt":"DIBBS VDC CCQL"},
              {"work-title":"Foobar", "work-url":"https://github.com/shabububu/foobar2016/", 
               "work-img-src":"./img/work/foobar.png", "work-img-alt":"Google Foobar Challenge"}];
+
+function displayAnchors() {
+  const palette = $( '#page-anchors' );
+  for (var i = 0; i < anchors.length; i++) {
+    anchor = anchors[i];
+    color = colors[i];
+    link = $( '<a />', { href: "#"+anchor["anchor-id"],
+                         text: anchor["anchor-text"] });
+    square = $( '<div />', { class: 'row-2 square', 
+			     css: { "background-color": color }});
+    squareDesc = $( '<div />', { class: 'row-2 color-description'}).append( link );
+    palette.append( square );
+    palette.append( squareDesc );
+  };
+}
 
 function displayPalette() {
   const palette = $( '#color-palette' );
@@ -17,7 +33,7 @@ function displayPalette() {
                                  text: color });
     palette.append( square );
     palette.append( squareDesc );
-  }
+  };
 }
 
 function displayFeaturedWork() {
@@ -40,6 +56,6 @@ function displayFeaturedWork() {
 }
 
 $( document ).ready(function() {
-  displayPalette();
+  displayAnchors();
   displayFeaturedWork();
 });
